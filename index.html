@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simran | BCA Student and Web Developer</title>
+  <meta name="description" content="Portfolio of Simran, a BCA student at Maharaja Ganga Singh University, Bikaner, building websites with HTML, CSS and JavaScript.">
+  <meta name="theme-color" content="#0B1020">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="#top">Simran<span>.</span></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="menu">
+        <li><a class="link" href="#about">About</a></li>
+        <li><a class="link" href="#skills">Skills</a></li>
+        <li><a class="link" href="#projects">Projects</a></li>
+        <li><a class="link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <h1 class="rise" style="--i:0">Hi, I'm Simran.<br>I build small, real things for the web.</h1>
+        <p class="lead rise" style="--i:1">BCA student at Maharaja Ganga Singh University, Bikaner. I turn what I learn in class into working websites, one project at a time.</p>
+        <div class="actions rise" style="--i:2">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap about">
+        <figure class="portrait reveal">
+          <img src="https://picsum.photos/seed/simran-about/720/820" width="720" height="820" alt="A calm landscape photo used as a placeholder portrait" loading="lazy">
+        </figure>
+        <div>
+          <h2 class="reveal">About me</h2>
+          <p class="reveal" style="--d:.08s">I'm studying for my BCA while building the skills I'll need for my career. I like to learn by making: every new topic in class becomes a small project I can open in a browser and share.</p>
+          <p class="reveal" style="--d:.16s">I'm comfortable with HTML, CSS and JavaScript, and I'm always picking up something new, like 3D on the web, Git and GitHub, and putting sites online.</p>
+          <dl class="facts reveal" style="--d:.24s">
+            <div><dt>Studying</dt><dd>BCA, MGSU Bikaner</dd></div>
+            <div><dt>Focus</dt><dd>Semester studies and career skills</dd></div>
+            <div><dt>Learning now</dt><dd>Three.js, Git, deployment</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2 class="reveal">What I work with</h2>
+        <div class="skills">
+          <article class="skill reveal" style="--accent:var(--violet);--d:0s">
+            <h3>Building</h3>
+            <ul>
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive layouts</li>
+            </ul>
+          </article>
+          <article class="skill reveal" style="--accent:var(--cyan);--d:.1s">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>Render</li>
+            </ul>
+          </article>
+          <article class="skill reveal" style="--accent:var(--pink);--d:.2s">
+            <h3>Exploring</h3>
+            <ul>
+              <li>Three.js</li><li>n8n automation</li><li>MCP</li><li>AI tools</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2 class="reveal">Projects</h2>
+        <p class="section-intro reveal" style="--d:.08s">A few things I've built while learning. Each one is plain HTML, CSS and JavaScript.</p>
+
+        <article class="project" style="--accent:var(--violet)">
+          <figure class="shot wipe"><img data-parallax src="https://picsum.photos/seed/skincare-hub/900/640" width="900" height="640" alt="Soft-toned placeholder image for the Skincare Hub project" loading="lazy"></figure>
+          <div class="info reveal">
+            <h3>Skincare Hub</h3>
+            <p>A multi-page website with skincare, hair care and body care sections. Every page shares one header and footer, so a change is made once and appears everywhere.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a class="more" href="https://github.com/simran-arora-06" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project" style="--accent:var(--cyan)">
+          <figure class="shot wipe"><img data-parallax src="https://picsum.photos/seed/aura-board/900/640" width="900" height="640" alt="Space-toned placeholder image for the Aura mood board project" loading="lazy"></figure>
+          <div class="info reveal">
+            <h3>Aura Mood Board</h3>
+            <p>A mood board generator with a dark space theme. I built it hackathon-style, using AI tools to plan and prototype, then wrote and refined the code myself.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a class="more" href="https://github.com/simran-arora-06" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project" style="--accent:var(--pink)">
+          <figure class="shot wipe"><img data-parallax src="https://picsum.photos/seed/azorte-fashion/900/640" width="900" height="640" alt="Fashion-toned placeholder image for the Azorte store project" loading="lazy"></figure>
+          <div class="info reveal">
+            <h3>Azorte Fashion Web</h3>
+            <p>The front end of an online fashion store, made for my AI and ML workshop. It covers the product browsing experience from the first screen to the last.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a class="more" href="https://github.com/simran-arora-06" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project" style="--accent:var(--violet)">
+          <figure class="shot wipe"><img data-parallax src="https://picsum.photos/seed/js-basics/900/640" width="900" height="640" alt="Abstract placeholder image for the JavaScript basics repository" loading="lazy"></figure>
+          <div class="info reveal">
+            <h3>JavaScript Basics</h3>
+            <p>My practice repository for core JavaScript: if-else decisions, arrays and loops, each with questions I solved while learning.</p>
+            <ul class="tags"><li>JavaScript</li><li>Practice</li></ul>
+            <a class="more" href="https://github.com/simran-arora-06" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap">
+        <h2 class="reveal">Let's build something together</h2>
+        <p class="section-intro reveal" style="--d:.08s">I'm open to internships, collaborations and projects where I can learn and contribute. The best way to reach me is through GitHub.</p>
+        <div class="actions reveal" style="--d:.16s">
+          <a class="btn btn-primary" href="https://github.com/simran-arora-06" target="_blank" rel="noopener">Visit my GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Simran. Built with plain HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
